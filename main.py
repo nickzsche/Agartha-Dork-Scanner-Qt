@@ -75,7 +75,7 @@ class MyApp(QtWidgets.QMainWindow):
     def ComboUpdate(self):
         if self.ui.cmb_Dork.currentIndex() == 0:
             self.ui.cmb_SelectDock.clear()
-            print(self.ui.cmb_Dork.currentIndex())
+            
             veritabani = sqlite3.connect("Dorks.db")
             cursor = veritabani.cursor()
             cursor.execute("""SELECT SqlList FROM SqlDorkList """)
@@ -85,7 +85,7 @@ class MyApp(QtWidgets.QMainWindow):
                 self.ui.cmb_SelectDock.addItem(a[0])
             veritabani.close()
         elif self.ui.cmb_Dork.currentIndex() == 1:
-            print(self.ui.cmb_Dork.currentIndex())
+            
             self.ui.cmb_SelectDock.clear()
             veritabani = sqlite3.connect("Dorks.db")
             cursor = veritabani.cursor()
@@ -96,7 +96,7 @@ class MyApp(QtWidgets.QMainWindow):
                 self.ui.cmb_SelectDock.addItem(a[0])
             veritabani.close()
         elif self.ui.cmb_Dork.currentIndex() == 2:
-            print(self.ui.cmb_Dork.currentIndex())
+            
             self.ui.cmb_SelectDock.clear()
             veritabani = sqlite3.connect("Dorks.db")
             cursor = veritabani.cursor()
@@ -107,7 +107,7 @@ class MyApp(QtWidgets.QMainWindow):
                 self.ui.cmb_SelectDock.addItem(a[0])
             veritabani.close()
         elif self.ui.cmb_Dork.currentIndex() ==3:
-            print(self.ui.cmb_Dork.currentIndex())
+            
             self.ui.cmb_SelectDock.clear()
             veritabani = sqlite3.connect("Dorks.db")
             cursor = veritabani.cursor()
@@ -118,7 +118,7 @@ class MyApp(QtWidgets.QMainWindow):
                 self.ui.cmb_SelectDock.addItem(a[0])
             veritabani.close()
         elif self.ui.cmb_Dork.currentIndex() ==4:
-            print(self.ui.cmb_Dork.currentIndex())
+            
             self.ui.cmb_SelectDock.clear()
             veritabani = sqlite3.connect("Dorks.db")
             cursor = veritabani.cursor()
